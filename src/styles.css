@@ -26,3 +26,10 @@
 body{
   margin: 0;
 }
+.app-container{  
+    min-width: 850px;
+    min-height: 640px;
+}
+.page-container{
+  margin: 5px;
+}
