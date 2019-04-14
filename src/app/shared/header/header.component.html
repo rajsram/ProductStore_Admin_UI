@@ -4,13 +4,24 @@
 </button>
 <span class="app-header">Admin Product's Store</span>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
+  <button routerLink="/product" mat-menu-item>
     <mat-icon>store</mat-icon>
     <span>Products</span>
   </button>
-  <button mat-menu-item>
+  <button routerLink="/report" mat-menu-item>
     <mat-icon>assessment</mat-icon>
     <span>Reports</span>
+  </button>
+</mat-menu>
+
+	<button class="user-button" mat-menu-item [matMenuTriggerFor]="user">
+  <mat-icon>person</mat-icon>
+  <span class="username">Rajesh</span>
+</button>
+<mat-menu #user="matMenu">
+  <button (click)="logout()" mat-menu-item>
+    <mat-icon>power_settings_new</mat-icon>
+    <span>Logout</span>
   </button>
 </mat-menu>
 

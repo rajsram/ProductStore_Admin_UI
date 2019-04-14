@@ -21,16 +21,16 @@ h2{
 form.login-form {
     margin-top: 50px;
 }
-.mat-form-field{
+form.login-form .mat-form-field{
 width: 100%;
 }
-button.mat-menu-item {
+form.login-form button.mat-menu-item {
     border: none;
     border-radius: 40px;
     height: 60px;
     width: 60px;
     box-shadow: inset 0 0 8px 0px #737373;
-    padding: 18px;
+    padding: 0 0 0 18px;
     margin: 80px;
     margin-left: 115px;
     background-color: #7dbfe4;

@@ -14,3 +14,10 @@
     padding: 0 22px;
     border-right: 1px solid lightgray;
 }
+button.user-button.mat-menu-item {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: auto;
+}

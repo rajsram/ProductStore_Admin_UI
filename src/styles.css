@@ -23,13 +23,25 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+html, body {
+    height: 100%;
+}
 body{
   margin: 0;
 }
 .app-container{  
     min-width: 850px;
     min-height: 640px;
+    height: 100%;
+    overflow-y: hidden;
 }
 .page-container{
   margin: 5px;
+  height: calc(100% - 70px);
+  overflow-x: auto;
+}
+
+.mat-menu-item .mat-icon {
+    margin-right: 16px;
+    vertical-align: middle;
 }
