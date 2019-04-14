@@ -1,0 +1,37 @@
+.login-page{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+    background-color: rgba(21, 95, 255, 0.06);
+}
+.login-form-container{
+ width: 300px;
+    height: 400px;
+    position: absolute;
+    top: calc(50% - 210px);
+    left: calc(50% - 175px);
+    box-shadow: 0 0 20px 0px rgb(91, 165, 232);
+    padding: 25px;
+    background-color: #fff;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+form.login-form {
+    margin-top: 50px;
+}
+.mat-form-field{
+width: 100%;
+}
+button.mat-menu-item {
+    border: none;
+    border-radius: 40px;
+    height: 60px;
+    width: 60px;
+    box-shadow: inset 0 0 8px 0px #737373;
+    padding: 18px;
+    margin: 80px;
+    margin-left: 115px;
+    background-color: #7dbfe4;
+}
