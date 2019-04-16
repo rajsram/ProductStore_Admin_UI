@@ -36,9 +36,9 @@ body{
     overflow-y: hidden;
 }
 .page-container{
-  margin: 5px;
-  height: calc(100% - 70px);
-  overflow-x: auto;
+    margin: 5px;
+    height: calc(100% - 70px);
+    overflow-x: hidden;
 }
 
 .mat-menu-item .mat-icon {

@@ -1,4 +1,25 @@
-table {
-  width: 100%;  
-  margin-top: 10px;
+.grid-header {
+  background-color: rgba(131, 207, 255, 0.8);
+  width: calc(100% - 18px);
+}
+mat-grid-tile {
+  border:1px solid gray;
+}
+.grid-data{
+  height: calc(100% - 105px) !important;
+  overflow: auto;
+}
+.header.filters{
+  height: 50px;
+  display: flex;
+}
+.title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-left: 65px;
+    font-weight: bold;
+    width: calc(100% - 580px);
+}
+.order-by{
+      margin-left: 100px;
 }

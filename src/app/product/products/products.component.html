@@ -1,4 +1,42 @@
 <app-header></app-header>
 <div class="page-container">
-  
+	<div class="header filters">
+		<div class="title">Products</div>
+		<div class="search">
+			<mat-form-field class="example-full-width">
+				<input type="text" matInput placeholder="Search ProductName">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+    </div>
+    <div class="order-by">
+      <mat-form-field>
+  <mat-label>Order By</mat-label>
+  <mat-select>
+    <mat-option value="ProductName">
+      ProductName
+    </mat-option>
+    <mat-option value="Price">
+      Price
+    </mat-option>
+    <mat-option value="Catagory">
+      Catagory
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+    </div>
+	</div>
+	<mat-grid-list class="grid-header" cols="4" rowHeight="50">
+		<mat-grid-tile>ProductName</mat-grid-tile>
+		<mat-grid-tile>Price</mat-grid-tile>
+		<mat-grid-tile>Description</mat-grid-tile>
+		<mat-grid-tile>Catagory</mat-grid-tile>
+	</mat-grid-list>
+	<mat-grid-list class="grid-data" cols="4" rowHeight="50">
+		<div *ngFor="let product of products">
+			<mat-grid-tile>{{product.ProductName}}</mat-grid-tile>
+			<mat-grid-tile>{{product.Price}}</mat-grid-tile>
+			<mat-grid-tile>{{product.Description}}</mat-grid-tile>
+			<mat-grid-tile>{{getCatagory(product.CatagoryId)}}</mat-grid-tile>
+		</div>
+	</mat-grid-list>
 </div>
