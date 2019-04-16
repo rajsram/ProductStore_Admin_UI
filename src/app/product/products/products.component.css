@@ -1,6 +1,7 @@
 .grid-header {
-  background-color: rgba(131, 207, 255, 0.8);
-  width: calc(100% - 18px);
+    background-color: rgb(63, 81, 181);
+    width: calc(100% - 18px);
+    color: #fff;
 }
 mat-grid-tile {
   border:1px solid gray;
