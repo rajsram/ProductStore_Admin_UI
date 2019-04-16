@@ -18,8 +18,18 @@ mat-grid-tile {
     line-height: 42px;
     margin-left: 65px;
     font-weight: bold;
-    width: calc(100% - 580px);
+    width: calc(100% - 690px);
 }
 .order-by{
-      margin-left: 100px;
+      margin-left: 70px;
+}
+.data-row:hover {
+    background-color: #e4e4e8;
+}
+.data-row {
+    height: 51px;
+}
+.add-button{
+  height: 40px;
+  margin: 5px 30px 0 0;
 }

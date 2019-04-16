@@ -2,6 +2,7 @@
 <div class="page-container">
 	<div class="header filters">
 		<div class="title">Products</div>
+    <button class="add-button" mat-raised-button color="primary"><mat-icon>add</mat-icon> Product</button>
 		<div class="search">
 			<mat-form-field class="example-full-width">
 				<input type="text" matInput placeholder="Search ProductName">
@@ -32,7 +33,7 @@
 		<mat-grid-tile>Catagory</mat-grid-tile>
 	</mat-grid-list>
 	<mat-grid-list class="grid-data" cols="4" rowHeight="50">
-		<div *ngFor="let product of products">
+		<div class="data-row" *ngFor="let product of products">
 			<mat-grid-tile>{{product.ProductName}}</mat-grid-tile>
 			<mat-grid-tile>{{product.Price}}</mat-grid-tile>
 			<mat-grid-tile>{{product.Description}}</mat-grid-tile>

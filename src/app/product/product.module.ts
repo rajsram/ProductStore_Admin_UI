@@ -7,7 +7,8 @@ import {
   MatIconModule,
   MatInputModule,
   MatGridListModule,
-  MatSelectModule
+  MatSelectModule,
+  MatButtonModule
 } from '@angular/material';
 
 import { SharedModule } from './../shared/shared.module'
@@ -27,7 +28,8 @@ import { ProductsComponent } from './products/products.component';
     MatInputModule,
     MatIconModule,
     MatGridListModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule
   ]
 })
 export class ProductModule { }
