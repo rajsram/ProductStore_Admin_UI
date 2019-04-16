@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Product } from './models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -7,36 +8,30 @@ export class ProductService {
 
   constructor() { }
 
-  getProducts(): PeriodicElement[] {
-    return ELEMENT_DATA;
+  getProducts(): Product[] {
+    return PRODUCTS;
   }
 }
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-  { position: 11, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 12, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 13, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 14, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 15, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 16, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 17, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 18, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 19, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 20, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+const PRODUCTS: Product[] = [
+  { ProductId: 1, ProductName: 'Hydrogen', Price: 1.0079, Description: 'H', CatagoryId: 1 },
+  { ProductId: 2, ProductName: 'Helium', Price: 4.0026, Description: 'He', CatagoryId: 1 },
+  { ProductId: 3, ProductName: 'Lithium', Price: 6.941, Description: 'Li', CatagoryId: 1 },
+  { ProductId: 4, ProductName: 'Beryllium', Price: 9.0122, Description: 'Be', CatagoryId: 1 },
+  { ProductId: 5, ProductName: 'Boron', Price: 10.811, Description: 'B', CatagoryId: 1 },
+  { ProductId: 6, ProductName: 'Carbon', Price: 12.0107, Description: 'C', CatagoryId: 1 },
+  { ProductId: 7, ProductName: 'Nitrogen', Price: 14.0067, Description: 'N', CatagoryId: 1 },
+  { ProductId: 8, ProductName: 'Oxygen', Price: 15.9994, Description: 'O', CatagoryId: 1 },
+  { ProductId: 9, ProductName: 'Fluorine', Price: 18.9984, Description: 'F', CatagoryId: 1 },
+  { ProductId: 10, ProductName: 'Neon', Price: 20.1797, Description: 'Ne', CatagoryId: 1 },
+  { ProductId: 11, ProductName: 'Hydrogen', Price: 1.0079, Description: 'H', CatagoryId: 1 },
+  { ProductId: 12, ProductName: 'Helium', Price: 4.0026, Description: 'He', CatagoryId: 1 },
+  { ProductId: 13, ProductName: 'Lithium', Price: 6.941, Description: 'Li', CatagoryId: 1 },
+  { ProductId: 14, ProductName: 'Beryllium', Price: 9.0122, Description: 'Be', CatagoryId: 1 },
+  { ProductId: 15, ProductName: 'Boron', Price: 10.811, Description: 'B', CatagoryId: 1 },
+  { ProductId: 16, ProductName: 'Carbon', Price: 12.0107, Description: 'C', CatagoryId: 1 },
+  { ProductId: 17, ProductName: 'Nitrogen', Price: 14.0067, Description: 'N', CatagoryId: 1 },
+  { ProductId: 18, ProductName: 'Oxygen', Price: 15.9994, Description: 'O', CatagoryId: 1 },
+  { ProductId: 19, ProductName: 'Fluorine', Price: 18.9984, Description: 'F', CatagoryId: 1 },
+  { ProductId: 20, ProductName: 'Neon', Price: 20.1797, Description: 'Ne', CatagoryId: 1 },
 ];

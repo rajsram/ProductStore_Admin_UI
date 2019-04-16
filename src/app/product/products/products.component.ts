@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PeriodicElement, ProductService } from '../product.service';
+import { ProductService } from '../product.service';
+import { Product } from '../models/product';
 
 @Component({
   selector: 'app-products',
@@ -8,11 +9,11 @@ import { PeriodicElement, ProductService } from '../product.service';
 })
 export class ProductsComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource: PeriodicElement[];
+  products: Product[];
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    this.dataSource = this.productService.getProducts();
+    this.products = this.productService.getProducts();
   }
 
 }
