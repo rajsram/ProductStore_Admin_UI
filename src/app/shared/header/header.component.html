@@ -4,11 +4,11 @@
 </button>
 <span class="app-header">Admin Product's Store</span>
 <mat-menu #menu="matMenu">
-  <button routerLink="/product" mat-menu-item>
+  <button (click)="routeTo('/product')" mat-menu-item>
     <mat-icon>store</mat-icon>
     <span>Products</span>
   </button>
-  <button routerLink="/report" mat-menu-item>
+  <button (click)="routeTo('/report')" mat-menu-item>
     <mat-icon>assessment</mat-icon>
     <span>Reports</span>
   </button>

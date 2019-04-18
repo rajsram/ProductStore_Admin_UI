@@ -25,10 +25,10 @@ const CATAGORIES: Catagory[] = [
 ]
 
 const PRODUCTS: Product[] = [
-  { ProductId: 1, ProductName: 'Hydrogen', Price: 1.0079, Description: 'H', CatagoryId: 1 },
-  { ProductId: 2, ProductName: 'Helium', Price: 4.0026, Description: 'He', CatagoryId: 1 },
-  { ProductId: 3, ProductName: 'Lithium', Price: 6.941, Description: 'Li', CatagoryId: 2 },
-  { ProductId: 4, ProductName: 'Beryllium', Price: 9.0122, Description: 'Be', CatagoryId: 1 },
+  { ProductId: 1, ProductName: 'Hydrogen', Price: 100.01, Description: 'H', CatagoryId: 1 },
+  { ProductId: 2, ProductName: 'Helium', Price: 401.01, Description: 'He', CatagoryId: 1 },
+  { ProductId: 3, ProductName: 'Lithium', Price: 60.94, Description: 'Li', CatagoryId: 2 },
+  { ProductId: 4, ProductName: 'Beryllium', Price: 90.01, Description: 'Be', CatagoryId: 1 },
   { ProductId: 5, ProductName: 'Boron', Price: 10.811, Description: 'B', CatagoryId: 4 },
   { ProductId: 6, ProductName: 'Carbon', Price: 12.0107, Description: 'C', CatagoryId: 1 },
   { ProductId: 7, ProductName: 'Nitrogen', Price: 14.0067, Description: 'N', CatagoryId: 4 },

@@ -45,3 +45,6 @@ body{
     margin-right: 16px;
     vertical-align: middle;
 }
+span,figure{
+  cursor: default;
+}

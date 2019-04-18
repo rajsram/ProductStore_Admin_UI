@@ -35,7 +35,7 @@
 	<mat-grid-list class="grid-data" cols="4" rowHeight="50">
 		<div class="data-row" *ngFor="let product of products">
 			<mat-grid-tile>{{product.ProductName}}</mat-grid-tile>
-			<mat-grid-tile>{{product.Price}}</mat-grid-tile>
+			<mat-grid-tile class="right">{{product.Price}}</mat-grid-tile>
 			<mat-grid-tile>{{product.Description}}</mat-grid-tile>
 			<mat-grid-tile>{{getCatagory(product.CatagoryId)}}</mat-grid-tile>
 		</div>
