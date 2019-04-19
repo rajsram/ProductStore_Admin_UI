@@ -11,6 +11,8 @@ import { Catagory } from '../models/catagory';
 export class ProductsComponent implements OnInit {
   products: Product[];
   catagory: Catagory[];
+  isShowProductForm: boolean;
+  selectedProduct:Product=new Product();
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
