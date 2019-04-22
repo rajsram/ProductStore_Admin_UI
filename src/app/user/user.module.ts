@@ -9,14 +9,17 @@ import {
 } from '@angular/material';
 
 import { LoginComponent } from './login/login.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
-  declarations: [LoginComponent], 
+  declarations: [LoginComponent, UsersComponent], 
   imports: [
     CommonModule,
     RouterModule.forChild([
       { path: '', redirectTo: 'login', pathMatch: 'full' },
-      { path: 'login', component: LoginComponent }]),
+      { path: 'login', component: LoginComponent },
+      { path: 'users', component: UsersComponent }
+      ]),
     MatInputModule,
     MatIconModule,
     MatMenuModule
