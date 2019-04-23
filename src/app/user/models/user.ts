@@ -25,12 +25,20 @@ export enum RoleType {
 }
 
 export enum UserStatus {
-  Enabled,
-  Disabled
+  Active,
+  Inactive,
+  Deleted
+
 }
 
 export enum UserType {
+  Prime,
+  Ordinary
+
 }
 
 export enum UserTrait {
+  Fraudulent,
+  Genuine
+
 }
