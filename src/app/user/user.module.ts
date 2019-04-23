@@ -8,6 +8,8 @@ import {
   MatInputModule,
 } from '@angular/material';
 
+import { SharedModule } from './../shared/shared.module'
+
 import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
 
@@ -15,6 +17,7 @@ import { UsersComponent } from './users/users.component';
   declarations: [LoginComponent, UsersComponent], 
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule.forChild([
       { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
