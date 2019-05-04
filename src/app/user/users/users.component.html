@@ -1,3 +1,43 @@
 <app-header></app-header>
 <div class="page-container">
+	<div class="header filters">
+		<div class="title">Users</div>
+    <button class="add-button" (click)="selectedUser=undefined;isShowUserForm=true" mat-raised-button color="primary"><mat-icon>add</mat-icon> User</button>
+		<div class="search">
+			<mat-form-field class="example-full-width">
+				<input type="text" matInput placeholder="Search User">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+    </div>
+    <div class="order-by">
+      <mat-form-field>
+  <mat-label>Order By</mat-label>
+  <mat-select>
+    <mat-option value="Name">
+      Name
+    </mat-option>
+    <mat-option value="Type">
+      Type
+    </mat-option>
+    <mat-option value="Status">
+      Status
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+    </div>
+	</div>
+	<mat-grid-list class="grid-header" cols="4" rowHeight="50">
+		<mat-grid-tile>Name</mat-grid-tile>
+		<mat-grid-tile>EmailId</mat-grid-tile>
+		<mat-grid-tile>Status</mat-grid-tile>
+		<mat-grid-tile>Address</mat-grid-tile>
+	</mat-grid-list>
+	<mat-grid-list class="grid-data" cols="4" rowHeight="50">
+		<div class="data-row" *ngFor="let user of users" (click)="selectedUser=user;isShowUserForm=true">
+			<mat-grid-tile>{{user.Name}}</mat-grid-tile>
+			<mat-grid-tile >{{user.EmailId}}</mat-grid-tile>
+			<mat-grid-tile>{{user.Status}}</mat-grid-tile>
+			<mat-grid-tile>{{user.Address}}</mat-grid-tile>
+		</div>
+	</mat-grid-list>
 </div>
